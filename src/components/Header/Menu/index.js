@@ -16,7 +16,11 @@ export default function Menu() {
   return (
     <Container visible={isComponentVisible}>
       <button type="button" onClick={setIsComponentVisible}>
-        {isComponentVisible ? <MdClose size={26} /> : <MdMenu size={26} />}
+        {isComponentVisible ? (
+          <MdClose size={26} color="#fff" />
+        ) : (
+          <MdMenu size={26} color="#fff" />
+        )}
       </button>
 
       {isComponentVisible ? (
