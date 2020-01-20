@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { darken } from 'polished';
 import colors from '~/styles/colors';
 
 export const Container = styled.div`
@@ -8,32 +7,34 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: calc(100vh - 64px);
+  width: 100%;
 `;
 
 export const Content = styled.section`
-  margin-bottom: 150px;
-  min-width: 400px;
+  width: 100%;
+  max-width: 400px;
   text-align: center;
   position: relative;
 
   img {
-    height: 150px;
-    margin-bottom: 50px;
+    height: 120px;
+    margin-bottom: 40px;
   }
 
   h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 700;
     color: ${colors.primary};
 
     position: absolute;
-    top: 110px;
-    right: 10px;
+    top: 90px;
+    right: 50px;
   }
+
   h2 {
     color: ${colors.white};
-    font-size: 30px;
+    font-size: 25px;
   }
 
   ul {
@@ -43,6 +44,7 @@ export const Content = styled.section`
 
     li {
       line-height: 32px;
+      font-size: 14px;
       font-weight: bold;
     }
 
@@ -57,6 +59,30 @@ export const Content = styled.section`
 
     li:nth-child(3) {
       color: ${colors.reactNative};
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 150px;
+    position: relative;
+    img {
+      height: 150px;
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 64px;
+
+      top: 110px;
+      right: 10px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    li {
+      font-size: 17px !important;
     }
   }
 `;

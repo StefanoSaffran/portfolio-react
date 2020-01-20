@@ -1,9 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { lighten } from 'polished';
 import colors from '~/styles/colors';
-
-import 'react-activity/dist/react-activity.css';
 
 export default createGlobalStyle`
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
@@ -21,9 +18,7 @@ export default createGlobalStyle`
   }
 
   html, body, #root {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
   }
 
   body {
