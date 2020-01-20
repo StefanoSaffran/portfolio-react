@@ -4,7 +4,7 @@ import { darken, lighten } from 'polished';
 export const Container = styled.div`
   background: none;
   padding: 0 30px;
-  min-width: 550px;
+  min-width: 300px;
 `;
 
 export const Content = styled.div`
