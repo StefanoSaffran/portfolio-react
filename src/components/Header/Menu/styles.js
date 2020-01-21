@@ -13,13 +13,13 @@ export const Container = styled.div`
   div {
     display: flex;
     flex-direction: column;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.6);
     padding: 15px 5px;
     position: absolute;
     top: 64px;
     left: 0;
-    height: 92.9%;
-    z-index: 2;
+    height: calc(100vh - 64px);
+    z-index: 3;
     animation: ${props =>
       props.visible &&
       'modalFadeIn .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards'};
@@ -28,6 +28,7 @@ export const Container = styled.div`
       color: #999;
       font-size: 15px;
       padding: 20px;
+      margin: 0 !important;
       animation: ${props =>
         props.visible &&
         'modalLinksFadeIn .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards'};

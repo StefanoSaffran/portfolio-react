@@ -29,7 +29,6 @@ export default function Menu() {
             <LinkWrapper to="/home">Home</LinkWrapper>
             <LinkWrapper to="/about">About</LinkWrapper>
           </div>
-          <div />
         </>
       ) : null}
     </Container>
