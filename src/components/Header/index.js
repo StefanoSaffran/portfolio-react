@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <Container>
       <Content>
-        {width < 768 ? (
+        {width < 769 ? (
           <nav>
             <Menu />
             <img src={logo} alt="logo" />
