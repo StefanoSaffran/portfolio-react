@@ -18,9 +18,12 @@ const RouteWrapper = ({ component: Component, ...rest }) => {
   );
 };
 
+RouteWrapper.defaultProps = {
+  component: undefined,
+};
+
 RouteWrapper.propTypes = {
-  component: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
-    .isRequired,
+  component: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
 };
 
 export default RouteWrapper;
