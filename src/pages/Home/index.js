@@ -1,13 +1,15 @@
 import React from 'react';
 
-import logo from '~/assets/logo.png'
+import logo from '~/assets/logo.png';
 import { Container, Content } from './styles';
 
 export default function Home() {
   return (
     <Container>
       <Content>
-        <img src={logo} alt="logo" />
+        <div className="img-container">
+          <img src={logo} alt="logo" />
+        </div>
         <h1>Stefano Saffran</h1>
         <h2>FullStack Developer</h2>
         <ul>

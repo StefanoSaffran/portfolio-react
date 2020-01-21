@@ -11,25 +11,21 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.section`
+  margin-bottom: 130px;
   width: 100%;
   max-width: 400px;
   text-align: center;
-  position: relative;
 
   img {
-    height: 120px;
-    margin-bottom: 40px;
+    height: 100px;
   }
 
   h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 700;
     color: ${colors.primary};
-
-    position: absolute;
-    top: 90px;
-    right: 50px;
+    margin-bottom: 10px;
   }
 
   h2 {
@@ -62,9 +58,26 @@ export const Content = styled.section`
     }
   }
 
+  @media (min-width: 410px) {
+    position: relative;
+
+    img {
+      height: 120px;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 50px;
+
+      position: absolute;
+      top: 90px;
+      right: 50px;
+    }
+  }
+
   @media (min-width: 768px) {
     margin-bottom: 150px;
-    position: relative;
+
     img {
       height: 150px;
       margin-bottom: 50px;

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { darken } from 'polished';
 import colors from '~/styles/colors';
 
 export const Container = styled.div`
@@ -12,14 +11,14 @@ export const Container = styled.div`
 
 export const Content = styled.section`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   max-width: 1040px;
   z-index: 2;
-  display: flex;
   -webkit-box-align: center;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  align-items: center;
   padding: 0px 20px;
   margin: 100px auto 0px;
   overflow: initial;
@@ -91,6 +90,43 @@ export const Content = styled.section`
       border-radius: 5px;
       width: 100%;
       max-width: 350px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin: 100px auto 0px;
+    div.about {
+    }
+
+    div.img {
+      img {
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    div.about {
+      order: 2;
+      h1 {
+        display: none;
+      }
+    }
+
+    div.img {
+      order: 1;
+    }
+
+    div.img::before {
+      content: 'About me';
+      text-align: center;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      width: 100%;
     }
   }
 `;
