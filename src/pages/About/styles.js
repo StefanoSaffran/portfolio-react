@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { darken } from 'polished';
 import colors from '~/styles/colors';
 
 export const Container = styled.div`
@@ -14,13 +15,12 @@ export const Content = styled.section`
   flex-direction: column;
   width: 100%;
   max-width: 1040px;
-  z-index: 2;
   -webkit-box-align: center;
   -webkit-box-pack: justify;
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  margin: 100px auto 0px;
+  margin: 280px auto 0px;
   overflow: initial;
 
   div.about {
@@ -74,6 +74,13 @@ export const Content = styled.section`
         }
 
         &:hover {
+          svg {
+            color: ${darken(0.09, '#00E868')} !important;
+          }
+
+          span {
+            text-decoration-line: underline;
+          }
         }
       }
     }
@@ -89,7 +96,15 @@ export const Content = styled.section`
     img {
       border-radius: 5px;
       width: 100%;
-      max-width: 350px;
+      max-width: 300px;
+    }
+  }
+
+  @media (min-width: 410px) {
+    div.img {
+      img {
+        max-width: 350px;
+      }
     }
   }
 
@@ -97,7 +112,7 @@ export const Content = styled.section`
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 20px;
-    margin: 100px auto 0px;
+    margin-top: 100px;
     div.about {
     }
 
@@ -107,16 +122,34 @@ export const Content = styled.section`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 359px) {
+    margin-top: 430px;
+  }
+
+  @media (max-width: 767px) {
     div.about {
       order: 2;
       h1 {
         display: none;
       }
+
+      div.social-media {
+        a {
+          justify-content: space-around;
+          svg {
+            height: 25px;
+            width: 25px;
+          }
+          span {
+            display: none;
+          }
+        }
+      }
     }
 
     div.img {
       order: 1;
+      margin-top: 140px;
     }
 
     div.img::before {
