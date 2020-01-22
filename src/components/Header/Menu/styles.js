@@ -45,6 +45,7 @@ export const Container = styled.div`
     left: 0;
     z-index: 1;
     opacity: 0.8;
+    overflow-y: hidden;
     transform: scale(1);
     animation: ${props =>
       props.visible &&
