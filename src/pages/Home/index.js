@@ -13,7 +13,7 @@ export default function Home() {
         <h1>Stefano Saffran</h1>
         <h2>FullStack Developer</h2>
         <ul>
-          <li>Node.js</li>
+          <li>NodeJS</li>
           <li>ReactJS</li>
           <li>React Native</li>
         </ul>
