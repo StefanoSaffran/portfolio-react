@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { MdMenu, MdClose } from 'react-icons/md';
+import bodyScroll from 'body-scroll-toggle';
 
 import useComponentVisible from '~/helpers/hooks/useComponentVisible';
 import LinkWrapper from '~/helpers/LinkWrapper';
@@ -14,16 +15,18 @@ export default function Menu() {
   } = useComponentVisible(false);
 
   useEffect(() => {
-    if (isComponentVisible && document.URL.endsWith('about')) {
-      document.body.style.position = 'fixed';
-      /* document.body.style.top = `-${window.scrollY}px`; */
+    if (isComponentVisible) {
+      bodyScroll.disable();
+      /* document.body.style.position = 'fixed';           && document.URL.endsWith('about')     document.URL  // eslint-disable-line
+       document.body.style.top = `-${window.scrollY}px`; */
     } else {
+      bodyScroll.enable();
       /* const scrollY = document.body.style.top; */
-      document.body.style.position = '';
-      /*       document.body.style.top = '';
+      /* document.body.style.position = '';
+      document.body.style.top = '';
       window.scrollTo(0, parseInt(scrollY || '0') * -1); */
     }
-  }, [isComponentVisible, document.URL]); // eslint-disable-line
+  }, [isComponentVisible]);
 
   return (
     <Container visible={isComponentVisible}>
