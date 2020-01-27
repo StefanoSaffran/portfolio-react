@@ -1,6 +1,6 @@
 export default {
   primary: 'rgb(0, 232, 104)',
-  background: '#000',
+  background: '#101010',
   white: '#fff',
   border: '#ddd',
   lightBorder: '#eee',

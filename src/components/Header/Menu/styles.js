@@ -18,7 +18,7 @@ export const Container = styled.div`
     position: absolute;
     top: 64px;
     left: 0;
-    height: calc(100vh - 64px);
+    height: 100vh;
     z-index: 3;
     animation: ${props =>
       props.visible &&

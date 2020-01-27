@@ -10,6 +10,7 @@
     "history": "^4.10.1",
     "polished": "^3.4.2",
     "prop-types": "^15.7.2",
+    "rc-progress": "^2.5.2",
     "react": "^16.11.0",
     "react-activity": "^1.2.2",
     "react-app-rewired": "^2.1.5",

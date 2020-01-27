@@ -4,6 +4,7 @@ import Route from './Route';
 
 import Home from '~/pages/Home';
 import About from '~/pages/About';
+import Skills from '~/pages/Skills';
 
 const Routes = () => {
   return (
@@ -13,6 +14,7 @@ const Routes = () => {
       </Route>
       <Route path="/home" component={Home} />
       <Route path="/about" component={About} />
+      <Route path="/skills" component={Skills} />
     </Switch>
   );
 };

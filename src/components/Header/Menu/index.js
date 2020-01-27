@@ -17,14 +17,8 @@ export default function Menu() {
   useEffect(() => {
     if (isComponentVisible) {
       bodyScroll.disable();
-      /* document.body.style.position = 'fixed';           && document.URL.endsWith('about')     document.URL  // eslint-disable-line
-       document.body.style.top = `-${window.scrollY}px`; */
     } else {
       bodyScroll.enable();
-      /* const scrollY = document.body.style.top; */
-      /* document.body.style.position = '';
-      document.body.style.top = '';
-      window.scrollTo(0, parseInt(scrollY || '0') * -1); */
     }
   }, [isComponentVisible]);
 
@@ -41,8 +35,9 @@ export default function Menu() {
       {isComponentVisible ? (
         <>
           <div ref={ref}>
-            <LinkWrapper to="/home">Home</LinkWrapper>
-            <LinkWrapper to="/about">About</LinkWrapper>
+            <LinkWrapper to="/home">HOME</LinkWrapper>
+            <LinkWrapper to="/about">ABOUT ME</LinkWrapper>
+            <LinkWrapper to="/skills">SKILLS</LinkWrapper>
           </div>
           <div />
         </>
