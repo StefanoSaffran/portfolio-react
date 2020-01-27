@@ -24,8 +24,8 @@ export const Container = styled.div`
 
 export const SkillsList = styled.ul`
   padding: 50px 20px 0;
-  background: #202020;
-  border: 1px solid ${colors.primary};
+  background: rgb(25, 24, 31);
+  border: 1px solid rgba(0, 232, 104, 0.2);
   border-radius: 4px;
 
   @media (max-width: 359px) {
