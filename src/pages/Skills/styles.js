@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   height: calc(100vh - 64px);
 
-  @media (max-width: 359px) {
+  @media (max-width: 411px) {
     margin-top: 150px;
   }
 `;
