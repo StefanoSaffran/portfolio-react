@@ -31,6 +31,7 @@ export default function Header() {
             <img src={logo} alt="logo" />
             <LinkWrapper to="/home">HOME</LinkWrapper>
             <LinkWrapper to="/about">ABOUT ME</LinkWrapper>
+            <LinkWrapper to="/skills">SKILLS</LinkWrapper>
           </nav>
         )}
       </Content>
