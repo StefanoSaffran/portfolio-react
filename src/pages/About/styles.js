@@ -113,13 +113,6 @@ export const Content = styled.section`
     justify-content: space-between;
     padding: 0px 20px;
     margin-top: 100px;
-    div.about {
-    }
-
-    div.img {
-      img {
-      }
-    }
   }
 
   @media (max-width: 359px) {
@@ -134,11 +127,17 @@ export const Content = styled.section`
       }
 
       div.social-media {
+        margin-bottom: 10px;
+        margin-top: 50px;
+        grid-gap: 10%;
         a {
+          padding: 20% 0;
           justify-content: space-around;
+          border: 1px dotted rgba(0, 232, 104, 0.3);
+          border-radius: 4px;
           svg {
-            height: 25px;
-            width: 25px;
+            height: 30px;
+            width: 30px;
           }
           span {
             display: none;

@@ -19,13 +19,7 @@ export default function SkillsBar() {
   const [percent70, setPercent70] = useState(0);
   const [percent60, setPercent60] = useState(0);
 
-  const increase = () => {
-    const newPercent = percent90 + 1;
-
-    if (newPercent >= 90) {
-      return;
-    }
-
+  const increase = newPercent => {
     setPercent85(newPercent < 85 ? newPercent : percent85);
     setPercent75(newPercent < 75 ? newPercent : percent75);
     setPercent70(newPercent < 70 ? newPercent : percent70);
@@ -33,8 +27,18 @@ export default function SkillsBar() {
     setPercent90(newPercent);
   };
 
+  const handleIncrease = () => {
+    const newPercent = percent90 + 1;
+
+    if (newPercent >= 90) {
+      return;
+    }
+
+    setTimeout(increase, 50, newPercent);
+  };
+
   useEffect(() => {
-    increase();
+    handleIncrease();
   }, [percent90]); //eslint-disable-line
 
   return (
@@ -64,6 +68,13 @@ export default function SkillsBar() {
         </Skill>
         <Skill>
           <div>
+            <FaGitAlt className="skillName react" size={25} color="#F1502F" />
+            <span>{percent70 + 1}%</span>
+          </div>
+          <Line percent={percent70} strokeWidth="1" strokeColor="#00e868" />
+        </Skill>
+        <Skill>
+          <div>
             <FaReact className="skillName react" size={25} color="#61dbfb" />
             <span>{percent70 + 1}%</span>
           </div>
@@ -79,13 +90,6 @@ export default function SkillsBar() {
         <Skill>
           <div>
             <FaNodeJs className="skillName react" size={25} color="#75B242" />
-            <span>{percent60 + 1}%</span>
-          </div>
-          <Line percent={percent60} strokeWidth="1" strokeColor="#00e868" />
-        </Skill>
-        <Skill>
-          <div>
-            <FaGitAlt className="skillName react" size={25} color="#F1502F" />
             <span>{percent60 + 1}%</span>
           </div>
           <Line percent={percent60} strokeWidth="1" strokeColor="#00e868" />
