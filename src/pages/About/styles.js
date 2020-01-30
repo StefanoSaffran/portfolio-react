@@ -115,10 +115,6 @@ export const Content = styled.section`
     margin-top: 100px;
   }
 
-  @media (max-width: 359px) {
-    margin-top: 450px;
-  }
-
   @media (max-width: 767px) {
     div.about {
       order: 2;
@@ -160,5 +156,19 @@ export const Content = styled.section`
       margin-bottom: 50px;
       width: 100%;
     }
+  }
+
+  @media (max-width: 411px) {
+    margin-top: 340px;
+
+    div.about {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 359px) {
+    margin-top: 400px;
   }
 `;
