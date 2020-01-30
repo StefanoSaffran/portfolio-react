@@ -34,7 +34,7 @@ export default function SkillsBar() {
       return;
     }
 
-    setTimeout(increase, 50, newPercent);
+    setTimeout(increase, 20, newPercent);
   };
 
   useEffect(() => {
