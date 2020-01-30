@@ -116,7 +116,7 @@ export const Content = styled.section`
   }
 
   @media (max-width: 359px) {
-    margin-top: 430px;
+    margin-top: 450px;
   }
 
   @media (max-width: 767px) {
