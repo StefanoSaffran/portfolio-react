@@ -12,7 +12,7 @@
 ## :iphone: Images
 
 <p align="center">
-  <img src="https://res.cloudinary.com/stefanosaffran/image/upload/v1581929605/portfolio/ggvoookzbhiri7ytuyqi.png">
+  <img src="https://res.cloudinary.com/stefanosaffran/image/upload/v1581934386/portfolio/xav6tecu1k5622h8itoe.png">
   <img src="https://res.cloudinary.com/stefanosaffran/image/upload/v1581929600/portfolio/tqz2ojranj68lrjakkxr.png">
   <img src="https://res.cloudinary.com/stefanosaffran/image/upload/v1581929609/portfolio/griduk6btqrdghbnfyql.png">
 </p>
