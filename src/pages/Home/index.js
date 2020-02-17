@@ -11,7 +11,7 @@ export default function Home() {
           <img src={logo} alt="logo" />
         </div>
         <h1>Stefano Saffran</h1>
-        <h2>Fullstack Developer</h2>
+        <h2>Software Developer</h2>
         <ul>
           <li>NodeJS</li>
           <li>ReactJS</li>
