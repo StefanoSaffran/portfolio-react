@@ -35,7 +35,7 @@ export default function About() {
         </div>
         <div className="img">
           <img
-            src="https://res.cloudinary.com/stefanosaffran/image/upload/v1579521489/kgheqrikijkbbxcrybat.jpg"
+            src="https://res.cloudinary.com/stefanosaffran/image/upload/v1579521489/portfolio/kgheqrikijkbbxcrybat.jpg"
             alt="Stefano Saffran"
           />
         </div>
